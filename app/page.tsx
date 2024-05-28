@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import Example from "./example.mdx";
+import Example from "./example.mdx";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 export default function Home() {
@@ -12,7 +12,14 @@ export default function Home() {
       This is from Server Components!
       `}
       />
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+      <Example />
+      <Image
+        src="/vercel.svg"
+        alt="Vercel Logo"
+        className="bg-white"
+        width={72}
+        height={16}
+      />
     </div>
   );
 }
